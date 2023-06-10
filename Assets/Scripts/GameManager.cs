@@ -30,7 +30,7 @@ public class GameManager : MonoBehaviour
     public TextMeshProUGUI totalCoinText;
     // public GameObject highscoreLabel;
 
-    State gameState;
+    public State gameState;
     int score;    // score of the current round
     int coin; // coin of the current round
     static string saveFile; // the path for file we save on the hard drive
