@@ -3000,7 +3000,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   scoreValueText: {fileID: 1586942831}
   scoreValue: 0
-  pointIncreasedPerSecond: 20
+  pointIncreasedPerSecond: 10
+  gameManager: {fileID: 1581561189}
 --- !u!4 &1382085324
 Transform:
   m_ObjectHideFlags: 0
@@ -3346,6 +3347,7 @@ MonoBehaviour:
   coinText: {fileID: 1517428847}
   highscoreText: {fileID: 1876988582}
   totalCoinText: {fileID: 1605635962}
+  gameState: 0
 --- !u!4 &1581561190
 Transform:
   m_ObjectHideFlags: 0
