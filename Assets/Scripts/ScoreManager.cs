@@ -10,14 +10,22 @@ public class ScoreManager : MonoBehaviour
     public float pointIncreasedPerSecond = 1f;
     bool isInGame;
     public GameManager gameManager;
-    
+    public float speedIncrease = 1;
+    public float speedForward = 10f;
+
+
+    void Update ()
+    {
+        //speedForward += speedIncrease * Time.deltaTime / 60;
+    }
     void FixedUpdate()
     {
         if (gameManager.gameState == GameManager.State.InGame)
         {
+            speedForward += speedIncrease * Time.deltaTime / 60;
             Debug.Log("yoitsstarting");
             scoreValueText.text = ((int)scoreValue).ToString();
-            scoreValue += pointIncreasedPerSecond * Time.fixedDeltaTime; 
+            scoreValue += speedForward * Time.fixedDeltaTime; 
         } 
     }
 }
